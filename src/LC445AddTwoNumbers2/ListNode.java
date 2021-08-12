@@ -12,4 +12,4 @@ public class ListNode {
 		return this.val + "->" + (this.next == null ? "null" : this.next.show());
 	}
 }
-// add random msg
+// delete random msg
