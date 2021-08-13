@@ -20,7 +20,16 @@ public class LinkedList {
 		tmp3.next = null;
 		return tmp1;
 	}
-	
+	// find linked list length 
+	public int getLength(ListNode l1) {
+		int n1 = 0;
+        ListNode curr1 = l1;
+        while (curr1 != null) {
+            curr1 = curr1.next; 
+            ++n1;    
+        }
+        return n1;
+	}
 	// reverse LinkedList
 	public ListNode reverseLinkedList(ListNode head) {
 		ListNode last = null;
