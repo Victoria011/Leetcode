@@ -59,3 +59,37 @@ public class Solution {
 }
 
 // Considering boundary 0 case, k could be 0, list could be empty, idx could be 0
+
+//Official solution
+//先绕成环 将首尾相连 然后思考从哪里断开
+//Complexity:
+//Runtime: O(N)
+//Space: O(1)
+//class Solution {
+// public ListNode rotateRight(ListNode head, int k) {
+//     // base case
+//     if (head == null) return null;
+//     if (head.next == null) return head;
+//     
+//     ListNode old_tail = head;
+//     int n;
+//     for (n = 1; old_tail.next != null; n++) {
+//         old_tail = old_tail.next;
+//     }
+//     old_tail.next = head;
+//     
+//     // find new tail: (n - k % n - 1)th node
+//     // and new head: (n - k % n)th node
+//     ListNode new_tail = head;
+//     for (int i = 0; i < n - k % n - 1; i++){
+//         new_tail = new_tail.next;
+//     }
+//     ListNode new_head = new_tail.next;
+//     
+//     //break the ring
+//     new_tail.next = null;
+//     
+//     return new_head;
+// }
+//}
+
