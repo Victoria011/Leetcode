@@ -1,4 +1,4 @@
-package LC82RemoveDuplicatesFromSortedLists;
+package LC83RemoveDuplicatesFromSortedLists;
 
 public class Main {
 
