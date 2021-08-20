@@ -3,6 +3,7 @@ package template;
 public class ListNode {
 	public int val;
 	public ListNode next;
+	public ListNode() {}
 	public ListNode (int x) {
 		val = x;
 		next = null;
@@ -43,7 +44,6 @@ public class ListNode {
 		ListNode head = new ListNode(0);
 		ListNode curr = head;
 		for (int num : list) {
-			System.out.println(Integer.toString(num));
 			ListNode tmp = new ListNode(num);
 			curr.next = tmp;
 			curr = curr.next;
