@@ -39,3 +39,28 @@ public class Solution {
 }
 
 // Approach 2 DFS
+//class Solution {
+// protected void DFS(TreeNode node, int level, List<List<Integer>> results) {
+//     if (level >= results.size()){ //. if first time visited
+//         LinkedList<Integer> newLevel = new LinkedList<Integer>();
+//         newLevel.add(node.val);
+//         results.add(newLevel);
+//     } else {
+//         if (level % 2 == 0) { // identify which direction
+//             results.get(level).add(node.val);
+//         } else {
+//             results.get(level).add(0, node.val); //. the reason for using linkedlist easy to add at head/tail
+//         }
+//     }
+//     
+//     if (node.left != null) DFS(node.left, level + 1, results);
+//     if (node.right != null) DFS(node.right, level + 1, results);
+// }
+// 
+// public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+//     List<List<Integer>> results = new ArrayList<List<Integer>>();
+//     if (root == null) return results;
+//     DFS(root, 0, results);
+//     return results;
+// }
+//}
