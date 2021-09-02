@@ -54,6 +54,8 @@ import template.TreeNode;
 //}
 
 //Approach 3 BFS 这样遍历到了可以立即结束节省时间
+import java.util.LinkedList;
+//import javafx.util.Pair;
 class Solution {
  public int minDepth(TreeNode root) {
      LinkedList<Pair<TreeNode, Integer>> queue = new LinkedList<>();
