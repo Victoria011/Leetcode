@@ -39,7 +39,7 @@ public class Solution {
 }
 
 // Approach 2: 
-////Approach 2: Group same char into count
+//Approach 2: Group same char into count
 //class Solution {
 // public int countBinarySubstrings(String s) {
 //     int[] group = new int[s.length()];
