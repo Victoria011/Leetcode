@@ -28,28 +28,28 @@ package AmazonBadNumber;
 //}
 
 
-public int getLongestSegment(int[] badNumbers, int lower, int upper) {
-	Collections.sort(badNumbers); 
-	int maxLength = Integer.MIN_VALUE;
-	if (badNumbers[0] > upper || badNumbers[-1] < lower) {
-		return 0;
-	}
-	int i=0;
-	while(badNumbers[i] < lower) {
-		i++;
-	}
-	int start = i;
-	for (int i; i < badNumbers.length(); i++) {
-		if ( badNumbers[i] > upper ) {
-			maxLength = Math.max(maxLength, upper - badNumebrs[i-1]);
-			break;
-		}
-		if ( i == start ) {
-			maxLength = Math.max(maxLength, badNumebrs[i] - lower);
-		} else {
-			maxLength = Math.max(maxLength, badNumbers[i] - badNumbers[i-1] - 1);
-		}
-	}
-	return maxLength;
-
-}
+//public int getLongestSegment(int[] badNumbers, int lower, int upper) {
+//	Collections.sort(badNumbers); 
+//	int maxLength = Integer.MIN_VALUE;
+//	if (badNumbers[0] > upper || badNumbers[-1] < lower) {
+//		return 0;
+//	}
+//	int i=0;
+//	while(badNumbers[i] < lower) {
+//		i++;
+//	}
+//	int start = i;
+//	for (int i; i < badNumbers.length(); i++) {
+//		if ( badNumbers[i] > upper ) {
+//			maxLength = Math.max(maxLength, upper - badNumebrs[i-1]);
+//			break;
+//		}
+//		if ( i == start ) {
+//			maxLength = Math.max(maxLength, badNumebrs[i] - lower);
+//		} else {
+//			maxLength = Math.max(maxLength, badNumbers[i] - badNumbers[i-1] - 1);
+//		}
+//	}
+//	return maxLength;
+//
+//}
